@@ -1,15 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "manifest_version": 2,
+  "name": "Unsub.me",
+  "description": "A Chrome extension that helps you manage your email subscriptions",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_popup": "index.html",
+    "defauly_title": "Open the popup"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+  // "start_url": ".",
+  // "display": "standalone",
+  // "theme_color": "#000000",
+  // "background_color": "#ffffff"
 }

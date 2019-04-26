@@ -1,7 +1,11 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {connect} from 'react-redux'
 
-const Home = () => <h1>Hello World</h1>
+class Home extends Component {
+  render() {
+    return <button className="start">Render App</button>
+  }
+}
 
 export default connect(
   null,

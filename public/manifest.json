@@ -11,9 +11,14 @@
     "16": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
-  }
-  // "start_url": ".",
-  // "display": "standalone",
-  // "theme_color": "#000000",
-  // "background_color": "#ffffff"
+  },
+  "background": {
+    "scripts": ["base64.js", "background.js"]
+  },
+  "content_security_policy": "script-src 'self' https://apis.google.com 'unsafe-eval'; object-src 'self'",
+  "oauth2": {
+    "client_id": "730617941965-8i8lo6081qmpet6gbouqs9tdsleqte95.apps.googleusercontent.com",
+    "scopes": ["https://mail.google.com/"]
+  },
+  "permissions": ["identity", "*://*.google.com/*"]
 }
